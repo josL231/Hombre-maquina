@@ -1,0 +1,103 @@
+/* Estilos base (Fondo blanco, texto negro) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+header, main, footer {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+/* Botón con degradado de color */
+.btn-degradado {
+  background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-right: 10px;
+}
+
+.btn-degradado:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#btn-fuente {
+  background-color: #e0e0e0;
+  color: #333333;
+  border: 1px solid #ccc;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btn-fuente:hover {
+  background-color: #d0d0d0;
+}
+
+/* Área de notificación con aria-live */
+#notificacion-accesible {
+  margin: 15px 0;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Estilos de la imagen interactiva */
+.contenedor-imagen {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#imagen-interactiva {
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: width 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Clase para aumentar el tamaño de la imagen */
+#imagen-interactiva.ampliada {
+  width: 550px;
+  max-width: 100%;
+}
+
+/* Clase de Alto Contraste (Fondo negro, texto blanco) */
+body.alto-contraste {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+body.alto-contraste a,
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste p {
+  color: #ffffff !important;
+}
+
+body.alto-contraste #notificacion-accesible {
+  background-color: #222222;
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  font-size: 0.9rem;
+}

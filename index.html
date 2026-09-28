@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi primera página accesible</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mi primera página accesible</h1>
+  </header>
+
+  <main>
+    <!-- Botones de accesibilidad -->
+    <section class="controles-accesibilidad" aria-label="Controles de accesibilidad">
+      <button id="btn-contraste" class="btn-degradado">Activar/Desactivar Alto Contraste</button>
+      <button id="btn-fuente">Aumentar tamaño de fuente</button>
+    </section>
+
+    <!-- Región aria-live para notificaciones accesibles -->
+    <div id="notificacion-accesible" aria-live="polite" class="sr-only-visible"></div>
+
+    <!-- Contenido con temática TI -->
+    <section class="contenido">
+      <h2>La Importancia de la Accesibilidad Web en TI</h2>
+      <p id="parrafo-ti">
+        La accesibilidad web (A11y) dentro de las Tecnologías de la Información es fundamental para garantizar que todas las personas, independientemente de sus capacidades físicas o cognitivas, puedan percibir, entender, navegar e interactuar con la red. Implementar buenas prácticas desde el desarrollo frontend no solo mejora la experiencia del usuario final, sino que promueve la inclusión digital y optimiza el posicionamiento SEO de las plataformas. En el diseño de software moderno, el desarrollo accesible es un estándar esencial para la equidad digital.
+      </p>
+
+      <!-- Imagen interactiva -->
+      <figure class="contenedor-imagen">
+        <img id="imagen-interactiva" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Código de programación en una pantalla de computadora" tabIndex="0">
+        <figcaption>Haz clic o presiona Enter sobre la imagen para cambiar su tamaño.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desarrollado por: <strong>Jose Leonardo Dominguez Chavez</strong></p>
+    <p>Curso/Asignatura: Interacción Hombre Maquina</p>
+    <p>Año: 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
